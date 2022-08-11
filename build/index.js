@@ -5,6 +5,9 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = __importDefault(require("express"));
 const app = (0, express_1.default)();
+const config_1 = __importDefault(require("config"));
+console.log("Mongo url", config_1.default.get("db.url"));
+// NODE_ENV=production node src/index.ts
 app.get("/", (req, res) => {
     res.send("Hello World");
 });
