@@ -19,6 +19,7 @@
   "homepage": "https://github.com/CYNO28/Patterns#readme",
   "dependencies": {
     "@types/nodemon": "^1.19.2",
+    "config": "^3.3.7",
     "express": "^4.18.1",
     "nodemon": "^2.0.19",
     "ts-node": "^10.9.1"
